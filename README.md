@@ -55,3 +55,8 @@ CCTV.getCamera().lookAt(player.transform.position); //Look at the player
 
 Instantiate(CCTV);
 ```
+
+### To get a game object and interact with it
+```
+GameObject.Find("player").transform.translate(0, 0, 5*deltaTime);   //Will translate the Z coordinate
+```
