@@ -4,7 +4,7 @@ to develop your 3D games with ease.
 
 The framework mimics the Unity3D scripting engine and adopts the simplicity of interacting with game objects.
 
-The framework is still in development, but so far has;
+The framework is still in development, so is not recommended for production of games... but so far has;
 - First person character controller
 - Cameras and post processing
 - Lighting
