@@ -11,12 +11,22 @@ The framework is still in development, but so far has;
 - Skyboxes
 - RigidBodies
 
+In later updates, the framework should have a terrain and the ability to auto-populate the terrain with grass and trees.
+It should also have the ability to change the lighting and the skybox within different scenes.
+
 ### Adding a component to a game object
 Just like unity, you simple call the addComponent method and pass in the component you wish to add.
 ```
 Cube cube = new Cube(Color.RED, 10, 10, 10);    //A red cube with a width, height and depth of 10
 cube.name = "cube";
 cube.addComponent(new RigidBody());
+
+AudioSource audio = new AudioSource();
+audio.is3D = true;
+audio.volume = 100;
+audio.hearDistance = 100;
+
+cube.addComponent(audio);
 
 Instantiate(cube);
 ```
@@ -40,7 +50,7 @@ SceneManager.LoadScene(new Level2());
 Camera CCTV = new Camera();
 CCTV.transform.position.x = 5;
 CCTV.transform.position.y = 5;
-CTV.transform.position.z = 0;
+CCTV.transform.position.z = 0;
 CCTV.getCamera().lookAt(player.transform.position); //Look at the player
 
 Instantiate(CCTV);
