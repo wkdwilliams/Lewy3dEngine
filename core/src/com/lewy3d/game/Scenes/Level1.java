@@ -55,8 +55,6 @@ public class Level1 extends GameWorld {
         player.name = "Player";
         player.getCamera().postProcessor.applyProfile(new PostProcessorProfileExample());
 
-        Grass grass = new Grass();
-
         Instantiate(ground);
         Instantiate(player);
         Instantiate(box1);
