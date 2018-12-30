@@ -11,8 +11,8 @@ The framework is still in development, so is not recommended for production of g
 - Skyboxes
 - RigidBodies and collision
 
-The framework also has a scene window, developed using Swing. The scene window simply lists the active game objects within
-the scene, showing their names, x, y and z coordinates within the game scene.
+The framework also has a scene window, developed using Swing. The scene window simply lists the active game objects,
+showing their names, x, y and z coordinates within the game world.
 
 In later updates, the framework should have a terrain and the ability to auto-populate the terrain with grass and trees.
 It should also have the ability to change the lighting and the skybox within different scenes.
