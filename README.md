@@ -29,3 +29,19 @@ player.getCamera().postProcessor.applyProfile(new PostProcessorProfileExample())
 
 Instantiate(cube);
 ```
+
+### To change scenes
+```
+SceneManager.LoadScene(new Level2());
+```
+
+### To add a new camera to the scene
+```
+Camera CCTV = new Camera();
+CCTV.transform.position.x = 5;
+CCTV.transform.position.y = 5;
+CTV.transform.position.z = 0;
+CCTV.getCamera().lookAt(player.transform.position); //Look at the player
+
+Instantiate(CCTV);
+```

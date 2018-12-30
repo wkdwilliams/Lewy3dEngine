@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector3;
 import com.lewy3d.game.Core.*;
+import com.lewy3d.game.Core.Camera.Camera;
 import com.lewy3d.game.Core.Camera.FirstPersonController;
 import com.lewy3d.game.Core.Component.Physics.RigidBody;
 import com.lewy3d.game.Core.Debug.Debug;
