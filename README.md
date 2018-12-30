@@ -9,7 +9,7 @@ The framework is still in development, but so far has;
 - Cameras and post processing
 - Lighting
 - Skyboxes
-- RigidBodies
+- RigidBodies and collision
 
 In later updates, the framework should have a terrain and the ability to auto-populate the terrain with grass and trees.
 It should also have the ability to change the lighting and the skybox within different scenes.
