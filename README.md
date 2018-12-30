@@ -11,7 +11,7 @@ The framework is still in development, but so far has;
 - Skyboxes
 - RigidBodies
 
-#### Adding a component to a game object
+### Adding a component to a game object
 Just like unity, you simple call the addComponent method and pass in the component you wish to add.
 ```
 Cube cube = new Cube(Color.RED, 10, 10, 10);    //A red cube with a width, height and depth of 10
@@ -21,7 +21,7 @@ cube.addComponent(new RigidBody());
 Instantiate(cube);
 ```
 
-#### To create a first person controller
+### To create a first person controller
 ```
 FirstPersonController player = new FirstPersonController();
 player.name = "Player";
