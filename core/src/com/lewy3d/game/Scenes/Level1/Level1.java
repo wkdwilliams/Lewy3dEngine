@@ -1,4 +1,4 @@
-package com.lewy3d.game.Scenes;
+package com.lewy3d.game.Scenes.Level1;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
@@ -6,15 +6,12 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector3;
 import com.lewy3d.game.Core.*;
-import com.lewy3d.game.Core.Camera.Camera;
 import com.lewy3d.game.Core.Camera.FirstPersonController;
 import com.lewy3d.game.Core.Component.Physics.RigidBody;
 import com.lewy3d.game.Core.Debug.Debug;
-import com.lewy3d.game.Core.Environment.Terrain.Grass;
 import com.lewy3d.game.Core.Shapes.Cube;
 import com.lewy3d.game.Core.Shapes.Sphere;
-import com.lewy3d.game.InfoText;
-import com.lewy3d.game.PostProcessorProfileExample;
+import com.lewy3d.game.Scenes.Level2.Level2;
 
 public class Level1 extends GameWorld {
 

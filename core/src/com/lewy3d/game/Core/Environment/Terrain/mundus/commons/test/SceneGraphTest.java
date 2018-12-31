@@ -20,7 +20,7 @@ import com.lewy3d.game.Core.Environment.Terrain.mundus.commons.scene3d.Node;
 import com.lewy3d.game.Core.Environment.Terrain.mundus.commons.scene3d.SimpleNode;
 
 /*import org.junit.Assert;
-import org.junit.Test;*/
+import org.junit.BulletTestScene;*/
 
 /**
  * @author Marcus Brummer
@@ -28,7 +28,7 @@ import org.junit.Test;*/
  */
 public class SceneGraphTest {
 
-    /*@Test
+    /*@BulletTestScene
     public void basicParenting() {
         Node root = new SimpleNode<SimpleNode>(0);
         Assert.assertNull(root.getChildren());

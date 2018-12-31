@@ -2,7 +2,7 @@ package com.lewy3d.game.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.lewy3d.game.MainGame;
+import com.lewy3d.game.Core.MainGame;
 import com.lewy3d.game.Settings;
 
 public class DesktopLauncher {

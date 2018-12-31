@@ -1,14 +1,11 @@
-package com.lewy3d.game;
+package com.lewy3d.game.Core;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.*;
 import com.lewy3d.game.Core.Debug.Debug;
 import com.lewy3d.game.Core.Debug.SceneView;
-import com.lewy3d.game.Core.GameWorld;
-import com.lewy3d.game.Core.SceneManager;
-import com.lewy3d.game.Scenes.Level1;
+import com.lewy3d.game.Settings;
 
 public class MainGame extends ApplicationAdapter {
 

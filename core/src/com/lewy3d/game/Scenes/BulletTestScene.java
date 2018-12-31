@@ -47,7 +47,7 @@ import com.badlogic.gdx.utils.Disposable;
 import com.lewy3d.game.Core.Debug.Debug;
 import com.lewy3d.game.Core.GameWorld;
 
-public class Test extends GameWorld {
+public class BulletTestScene extends GameWorld {
 
     final static short OBJECT_FLAG = 1 << 9;
 

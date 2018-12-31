@@ -1,4 +1,4 @@
-package com.lewy3d.game;
+package com.lewy3d.game.Scenes.Level1;
 
 import com.badlogic.gdx.Gdx;
 import com.lewy3d.game.Core.UI.Text;

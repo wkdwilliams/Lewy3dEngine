@@ -3,7 +3,7 @@ package com.lewy3d.game.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import com.lewy3d.game.MainGame;
+import com.lewy3d.game.Core.MainGame;
 
 public class HtmlLauncher extends GwtApplication {
 

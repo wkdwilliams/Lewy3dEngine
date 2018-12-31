@@ -5,9 +5,7 @@ import com.badlogic.gdx.graphics.PerspectiveCamera;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.lewy3d.game.Core.Camera.PostProcessor.bitfire.postprocessing.PostProcessor;
-import com.lewy3d.game.Core.Camera.PostProcessor.bitfire.postprocessing.effects.Bloom;
 import com.lewy3d.game.Core.GameObject;
-import com.lewy3d.game.PostProcessorProfileExample;
 
 public class Camera extends GameObject{
 

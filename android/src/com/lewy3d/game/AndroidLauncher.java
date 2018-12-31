@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.lewy3d.game.MainGame;
+import com.lewy3d.game.Core.MainGame;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
