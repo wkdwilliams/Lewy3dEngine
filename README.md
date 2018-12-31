@@ -1,4 +1,5 @@
 # Lewy3dEngine
+![alt text](https://raw.githubusercontent.com/wkdwilliams/Lewy3dEngine/master/DeepinScreenshot_select-area_20181231075957.png)
 A Java 3D game framework built using the LibGDX 3D API. This framework provides simple-to-use objects that allows you
 to develop your 3D games with ease.
 
