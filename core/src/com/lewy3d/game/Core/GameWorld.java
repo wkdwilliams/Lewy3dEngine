@@ -28,11 +28,11 @@ import java.util.*;
 
 public abstract class GameWorld implements Screen {
 
-    public static btDynamicsWorld                   dynamicsWorld;
-    protected btDefaultCollisionConfiguration       collisionConfig;
-    protected btCollisionDispatcher                 dispatcher;
-    protected btDbvtBroadphase                      broadphase;
-    protected btSequentialImpulseConstraintSolver   constraintSolver;
+    public static   btDynamicsWorld                       dynamicsWorld;
+    protected       btDefaultCollisionConfiguration       collisionConfig;
+    protected       btCollisionDispatcher                 dispatcher;
+    protected       btDbvtBroadphase                      broadphase;
+    protected       btSequentialImpulseConstraintSolver   constraintSolver;
 
     public static ArrayList<GameObject> gameObjects;
     public static Environment           environment;
