@@ -125,4 +125,29 @@ public abstract class GameObject {
 
     }
 
+    //Empty game object
+
+    public static class Empty extends GameObject{
+
+        @Override
+        protected void start() {
+
+        }
+
+        @Override
+        protected void render() {
+
+        }
+
+        @Override
+        protected void update(float deltaTime) {
+
+        }
+
+        @Override
+        protected void dispose() {
+
+        }
+    }
+
 }

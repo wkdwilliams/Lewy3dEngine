@@ -12,7 +12,7 @@ public class Settings {
     public static final String  NAME                    = "Lewy3D";
     public static final boolean SHOWERRORS              = true;
     public static final boolean SHOWWARNINGS            = true;
-    public static final boolean SHOWSCENEVIEW           = true;
+    public static boolean       SHOWSCENEVIEW           = true;
     public static final boolean CAPTURECURSOR           = true;
     public static final boolean CAPTURECURSORONCLICK    = true;
     public static final int     UNCAPTURECURSORBUTTON   = Input.Keys.ESCAPE;
