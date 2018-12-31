@@ -161,13 +161,13 @@ public abstract class GameWorld implements Screen {
 
     }
 
-    static ArrayList<Camera> getCameras(){
-    ArrayList<Camera> cameras = new ArrayList<Camera>();
+    static ArrayList<Camera> getCameras() {
+        ArrayList<Camera> cameras = new ArrayList<Camera>();
 
-    for(GameObject camera : gameObjects){
-        if(camera instanceof Camera) cameras.add((Camera) camera);
-    }
-    return cameras;
+        for (GameObject camera : gameObjects) {
+            if (camera instanceof Camera) cameras.add((Camera) camera);
+        }
+        return cameras;
     }
 
     @Override
