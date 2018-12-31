@@ -36,10 +36,10 @@ public class Level1 extends GameWorld {
         box3.transform.position.x = 60;
         box3.active = false;    //Not active, so will not render
 
-        Sphere ball1 = new Sphere(Color. BLUE, 10);
+        Sphere ball1 = new Sphere(Color.BLUE, 10);
         ball1.name = "Ball1";
         ball1.transform.position.x = -30;
-        ball1.transform.position.y = 5;
+        ball1.transform.position.y = 50;
         ball1.addComponent(new RigidBody());
 
         InfoText info = new InfoText();
@@ -60,7 +60,9 @@ public class Level1 extends GameWorld {
         Instantiate(ball1);
         Instantiate(info);
 
-        Debug.log("Created the ground, a blue cube, a red cube and purple cube which is not active");
+        Debug.log("Created the ground, a blue cube, a red cube, a purple cube which is not active");
+        Debug.log("A blue ball containing the rigidbody component and a info text object showing the FPS and instructions.");
+        Debug.log("Lastly, we created a first person character controller.");
     }
 
     @Override
