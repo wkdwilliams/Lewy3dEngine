@@ -1,16 +1,15 @@
 package com.lewy3d.game.Core;
 
+import com.badlogic.ashley.core.Component;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g3d.Environment;
 import com.badlogic.gdx.graphics.g3d.ModelBatch;
 import com.badlogic.gdx.graphics.g3d.attributes.ColorAttribute;
 import com.badlogic.gdx.graphics.g3d.environment.DirectionalLight;
-import com.badlogic.gdx.graphics.g3d.loader.G3dModelLoader;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.physics.bullet.Bullet;
 import com.badlogic.gdx.physics.bullet.collision.btCollisionDispatcher;
@@ -19,9 +18,7 @@ import com.badlogic.gdx.physics.bullet.collision.btDefaultCollisionConfiguration
 import com.badlogic.gdx.physics.bullet.dynamics.btDiscreteDynamicsWorld;
 import com.badlogic.gdx.physics.bullet.dynamics.btDynamicsWorld;
 import com.badlogic.gdx.physics.bullet.dynamics.btSequentialImpulseConstraintSolver;
-import com.badlogic.gdx.utils.UBJsonReader;
 import com.lewy3d.game.Core.Camera.Camera;
-import com.lewy3d.game.Core.Debug.Debug;
 import com.lewy3d.game.Core.Environment.SkyBox;
 
 import java.util.*;
@@ -29,10 +26,10 @@ import java.util.*;
 public abstract class GameWorld implements Screen {
 
     public static   btDynamicsWorld                       dynamicsWorld;
-    protected       btDefaultCollisionConfiguration       collisionConfig;
-    protected       btCollisionDispatcher                 dispatcher;
-    protected       btDbvtBroadphase                      broadphase;
-    protected       btSequentialImpulseConstraintSolver   constraintSolver;
+    private         btDefaultCollisionConfiguration       collisionConfig;
+    private         btCollisionDispatcher                 dispatcher;
+    private         btDbvtBroadphase                      broadphase;
+    private         btSequentialImpulseConstraintSolver   constraintSolver;
 
     public static ArrayList<GameObject> gameObjects;
     public static Environment           environment;
@@ -71,7 +68,6 @@ public abstract class GameWorld implements Screen {
                 Gdx.files.internal("core/skybox/nz.jpg")
         );
 
-
         noCameraText = new BitmapFont();
         noCameraText.setColor(Color.WHITE);
 
@@ -81,9 +77,7 @@ public abstract class GameWorld implements Screen {
     @Override
     public void render(float delta) {
 
-        //spriteBatch.setProjectionMatrix(getActiveCamera().getCamera().combined);
-
-
+        spriteBatch.setProjectionMatrix(getActiveCamera().getCamera().combined);
 
         if(getActiveCamera() == notFoundCamera){
             spriteBatch.begin();
@@ -205,6 +199,10 @@ public abstract class GameWorld implements Screen {
 
     @Override
     public void show() {
+
+    }
+
+    public class Position implements Component {
 
     }
 }
