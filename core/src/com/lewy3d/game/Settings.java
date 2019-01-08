@@ -17,5 +17,6 @@ public class Settings {
     public static final boolean CAPTURECURSORONCLICK    = true;
     public static final int     UNCAPTURECURSORBUTTON   = Input.Keys.ESCAPE;
     public static final Class   startingScene           = Level1.class;
+    
 
 }
